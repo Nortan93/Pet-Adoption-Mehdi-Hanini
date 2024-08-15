@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Pet</title>
+    <link rel="stylesheet" href="/css/Q4.css">
+</head>
+
+<body>
+
+    <%- include ('partials/header') -%> 
+    <div class="container">
+        <%- include ('partials/sidemenu') -%>
+
+    <main id="content">
+    <section id="find-pet" class="content-section">
+        
+            <h2>Find a Dog/Cat</h2>
+            <br>
+            <form id="findPetForm" action="/search-pets" method="post">
+                <label for="animal">Cat or Dog:</label><br>
+                <select id="animal" name="animal">
+                    <option value="">Select...</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                </select><br><br>
+    
+                <label for="breed">Breed:</label><br>
+                <input type="text" id="breed" name="breed" placeholder="Doesn't Matter"><br><br>
+    
+                <label for="age">Preferred Age:</label><br>
+                <select id="age" name="age">
+                    <option value="">Select...</option>
+                    <option value="puppy/kitten">1 year</option>
+                    <option value="young">2 years</option>
+                    <option value="adult">3 years</option>
+                    <option value="senior">4 years</option>
+                </select><br><br>
+    
+                <label for="gender">Preferred Gender:</label><br>
+                <select id="gender" name="gender">
+                    <option value="">Select...</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select><br><br>
+    
+                <label for="other-dogs">Needs to get along with other dogs:</label><br>
+                <select id="other-dogs" name="other-dogs">
+                    <option value="">Select...</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+    
+                <label for="other-cats">Needs to get along with other cats:</label><br>
+                <select id="other-cats" name="other-cats">
+                    <option value="">Select...</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+    
+                <label for="small-children">Needs to get along with small children:</label><br>
+                <select id="small-children" name="small-children">
+                    <option value="">Select...</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+    
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear">
+            </form>
+            <br>
+            <div id="error-message" style="color: red; display: none;"></div>
+            <div id="success-message" style="color: green; display: none;">Submission successful !</div>
+        </fieldset>
+    </section>
+
+    <script>
+       document.getElementById('findPetForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(e.target);
+
+    fetch('/search-pets', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        console.log('Response data:', data); // Log data to debug
+
+        if (data.success) {
+            window.location.href = '/browse-pets'; // Redirect to the results page
+        } else {
+            document.getElementById('error-message').innerText = 'No matching pets found.';
+            document.getElementById('error-message').style.display = 'block';
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        document.getElementById('error-message').innerText = 'An error occurred. Please try again.';
+        document.getElementById('error-message').style.display = 'block';
+    });
+});
+
+           
+    </script>
+
+</div>
+    </main>
+    <%- include ('partials/footer') -%> 
+</body>
+    </html>

@@ -1,0 +1,86 @@
+
+        Pet Type: cat
+        Breed: mix
+        Age: puppy-kitten
+        Gender: male
+        Gets Along with Dogs: Yes
+        Gets Along with Cats: Yes
+        Family Friendly: Yes
+        Comments: AAAA
+        Owner Name: YOYO
+        Owner Email: et@email.com
+        -------------------------
+    
+        Pet Type: cat
+        Breed: mix
+        Age: puppy-kitten
+        Gender: male
+        Gets Along with Dogs: Yes
+        Gets Along with Cats: Yes
+        Family Friendly: Yes
+        Comments: AAAA
+        Owner Name: YOYO
+        Owner Email: et@email.com
+        -------------------------
+    
+        Pet Type: cat
+        Breed: Siamese
+        Age: young
+        Gender: female
+        Gets Along with Dogs: Yes
+        Gets Along with Cats: Yes
+        Family Friendly: Yes
+        Comments: BBBB
+        Owner Name: Mikey
+        Owner Email: email@email.com
+        -------------------------
+    
+        Pet Type: dog
+        Breed: 
+        Age: 
+        Gender: 
+        Gets Along with Dogs: No
+        Gets Along with Cats: No
+        Family Friendly: No
+        Comments: 
+        Owner Name: ji
+        Owner Email: ji@email.com
+        -------------------------
+    
+        Pet Type: dog
+        Breed: 
+        Age: 
+        Gender: 
+        Gets Along with Dogs: No
+        Gets Along with Cats: No
+        Family Friendly: No
+        Comments: 
+        Owner Name: ji
+        Owner Email: ji@email.com
+        -------------------------
+    
+        Username: undefined  
+        Pet Type: dog
+        Breed: mix
+        Age: puppy-kitten
+        Gender: male
+        Gets Along with Dogs: Yes
+        Gets Along with Cats: Yes
+        Family Friendly: Yes
+        Comments: NNNN
+        Owner Name: sara
+        Owner Email: jilo@email.com
+        -------------------------
+    
+        Pet Type: dog
+        Breed: mix
+        Age: puppy-kitten
+        Gender: male
+        Gets Along with Dogs: Yes
+        Gets Along with Cats: Yes
+        Family Friendly: Yes
+        Comments: NNNN
+        Owner Name: sara
+        Owner Email: jilo@email.com
+        -------------------------
+    

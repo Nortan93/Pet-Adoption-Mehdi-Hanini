@@ -1,0 +1,44 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Pet</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <%- include('partials/header') %>
+
+    <div class="container">
+        <%- include('partials/sidemenu') %>
+
+
+    <h1>Register a Pet</h1>
+    <form action="/register-pet" method="POST">
+        <input type="hidden" name="username" value="<%= username %>">
+        <label for="petType">Pet Type:</label>
+        <input type="text" id="petType" name="petType" required>
+        <br>
+        <label for="breed">Breed:</label>
+        <input type="text" id="breed" name="breed" required>
+        <br>
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" required>
+        <br>
+        <label for="gender">Gender:</label>
+        <input type="text" id="gender" name="gender" required>
+        <br>
+        <label for="otherInfo">Other Info:</label>
+        <input type="text" id="otherInfo" name="otherInfo">
+        <br>
+        <input type="submit" value="Register Pet">
+    </form>
+    <div><%= successMessage %></div>
+    <div><%= errorMessage %></div>
+
+    <%- include('partials/footer') %>
+</body>
+</html>

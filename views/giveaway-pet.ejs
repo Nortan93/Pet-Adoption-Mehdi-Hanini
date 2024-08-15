@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Giveaway</title>
+    <link rel="stylesheet" href="/css/Q4.css">
+</head>
+
+<body>
+
+    <%- include ('partials/header') -%> 
+    <div class="container">
+        <%- include ('partials/sidemenu') -%>
+    <section id="giveaway-pet" class="content-section">
+        
+            <h2>Pet Give Away</h2>
+            <br>
+            <p>If you have a pet to give away, please fill in the following information:</p>
+            <br>
+    
+            <form id="giveaway-form" action="/submit-pet-info" method="post">
+                
+                <label for="pet-type">Cat or Dog:</label>
+                <select id="pet-type" name="pet-type">
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                </select>
+                <br><br>
+                <label for="pet-breed">Breed:</label>
+                <select id="pet-breed" name="pet-breed">
+                    <option value="">Select...</option>
+                    <option value="mix">Mix Breed</option>
+                    <option value="Lbarador retriever">Labrador Retriever</option>
+                    <option value="German Shepherd">German Shepherd</option>
+                    <option value="Golden retriever">Golden Retriever</option>
+                    <option value="Chiwawa">Chihuahua</option>
+                    <option value="Bulldog">Bulldog</option>
+
+                    <option value="Siamese">Sieamese</option>
+                    <option value="Persian">Persian</option>
+                    <option value="Sphynx">Sphynx</option>
+                    <option value="Bengal">Bengal</option>
+                    <option value="Maine Coon">Maine Coom</option>
+
+
+                </select>
+                <br><br>
+                <label for="pet-age">Age:</label>
+                <select id="pet-age" name="pet-age">
+                    <option value="">Select...</option>
+                    <option value="puppy-kitten">Puppy/Kitten</option>
+                    <option value="young">Young</option>
+                    <option value="adult">Adult</option>
+                    <option value="senior">Senior</option>
+                </select>
+                <br><br>
+                <label for="pet-gender">Gender:</label>
+                <select id="pet-gender" name="pet-gender">
+                    <option value="">Select...</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <br><br>
+                <label for="get-along-dogs">Gets Along with Other Dogs:</label>
+                <input type="radio" id="get-along-dogs" name="get-along-dogs">
+                <label for="get-along-dogs">Yes</label>
+                <input type="radio" id="get-along-dogs-no" name="get-along-dogs" value="no">
+                <label for="get-along-dogs-no">No</label>
+                
+                <br><br>
+
+                <label for="get-along-cats">Gets Along with Other Cats:</label>
+                <input type="radio" id="get-along-cats" name="get-along-cats">
+                <label for="get-along-cats">Yes</label>
+                <input type="radio" id="get-along-cats-no" name="get-along-cats">
+                <label for="get-along-cats">No</label>
+                <br><br>
+
+                <label for="family-friendly">Suitable for a Family with Small Children:</label>
+                <input type="radio" id="family-friendly" name="family-friendly">
+                <label for="family-friendly">Yes</label>
+                <input type="radio" id="family-friendly" name="family-friendly">
+
+                <label for="family-friendly">No</label>
+                <br><br>
+                <label for="pet-comments">Comments:</label>
+                <textarea id="pet-comments" name="pet-comments" rows="4" cols="50" placeholder="Tell us about the pet..."></textarea>
+                <br><br>
+                <label for="owner-name">Your Name:</label>
+                <input type="text" id="owner-name" name="owner-name" required>
+                <br><br>
+                <label for="owner-email">Your Email:</label>
+                <input type="email" id="owner-email" name="owner-email" required>
+                <br><br>
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+                
+            </form>
+    
+            <p id="form-error" style="color: red;"></p>
+            <p id="form-success" style="color: green;"></p>
+        
+    </section>
+
+    </div>
+
+    <%- include ('partials/footer') -%> 
+    
+
+</body>
+</html>    

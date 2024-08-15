@@ -1,0 +1,232 @@
+
+
+body {
+    background-image: url('https://media.istockphoto.com/id/1379780650/zh/%E5%90%91%E9%87%8F/fun-black-line-doodle-seamless-pattern.jpg?s=612x612&w=0&k=20&c=joOqJbBcmLEjNGah0X5XRiUC-R_ojtnKjNTDfllb9RI=');
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+body::before  {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.962); /* White overlay with 50% transparency; adjust color and opacity as needed */
+    z-index: -1; /* Places the overlay behind the content */
+    pointer-events: none; /* Prevents the overlay from blocking interactions */
+}
+
+
+header {
+    background-color: #68e6d994;
+    background-image: url('https://i.pinimg.com/236x/2c/a4/09/2ca40970a4676de87a07c2e49e25cdd3.jpg');
+    background-color:rgba(255, 255, 255, 0.6);
+    padding: 5px 0;
+    border-bottom: 10px solid #1ac2a6;
+    border-top: 10px solid #1ac2a6;
+}
+
+.header-table {
+    font-family:Arial, Helvetica, sans-serif;
+    width: 20%;
+    padding-top: 0%;
+    margin: auto auto;
+    /*border-color: rgb(211, 43, 161);*/
+    background-color: #1bd0b2b0;
+    color: white;
+    text-shadow: -5px -5px 0 #000, 5px -5px 0 #000, -5px 5px 0 #000, 5px 5px 0 #000;
+}
+
+.logo {
+    width: 300px;
+    height: 150px;
+    cursor:pointer;
+    }
+    
+
+
+#Adoption-House {
+    font-size: 50px;
+}
+#dateTime {
+    position: absolute;
+    right: 0;
+    color:rgb(202, 13, 86);
+    text-align: left;
+    padding: 10px; 
+    margin: 20px;
+    font-size: 1em;
+    font-weight:bold;
+    background-color: #68e6d9b3; 
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    padding-left: 5px;
+}
+
+a {
+    color: rgb(26, 16, 163);  
+    text-decoration: none;         
+}
+
+a:hover:not(.active) {
+    color: #c1e10b;
+}
+.container {
+    display:flex;   
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+.side-menu {
+    text-align: center;
+    width: 240px;
+    background-color: #de84e946;
+    border-right: 10px double #6265ed;
+    padding-top: 10px;
+    padding-right: 50px;
+    height: 150vh;
+    position:sticky;
+    overflow-y:hidden;
+}
+
+.navigation-bar {
+    list-style-type:none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation-bar li {
+    list-style-type:none;
+    background-color: rgba(212, 120, 215, 0.334);
+    color: rgb(227, 227, 241);
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-weight:bold;
+}
+
+.navigation-bar li.active {
+    background-color: rgb(24, 222, 123);
+    color: white;
+}
+
+.navigation-bar li:hover:not(.active) {
+    background-color: rgba(223, 66, 35, 0.778);
+    color: rgb(223, 226, 13);
+}
+
+main {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+
+.content-section {
+    margin-left: 50px;
+    padding:40px 40px 40px 40px;
+}
+
+#content {
+    margin-left: auto; 
+    padding: 30px;
+    flex-grow: 1;
+}
+
+
+
+footer {
+    background-color: #7f06776d;
+    padding: 10px;
+    border-top: 10px solid #a812ae;
+    border-bottom: 10px solid #a812ae;
+
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .side-menu {
+        position: relative;
+        height: auto;
+        border-right: none;
+    }
+    .nav-link {
+        margin-bottom: 5px;
+    }
+    main {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    header {
+        text-align: center;
+    }
+    .header-table {
+        display: none;
+    }
+    h1 {
+        padding-left: 0;
+    }
+    .logo {
+        width: 120px;
+        height: 60px;
+    }
+    .side-menu {
+        border-right: none;
+    }
+    .nav-link {
+        padding: 5px;
+        font-size: 16px;
+    }
+}
+
+#browse-pets {
+    padding: 20px;
+}
+
+.pet {
+    display:flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0px;
+    background-color: #f9f9f9;
+}
+
+.pet-image {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.pet-info {
+    flex: 1;
+}
+
+.interested-btn {
+    background-color: #1ac2a6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.interested-btn:hover {
+    background-color: #0a9e84;
+}
+

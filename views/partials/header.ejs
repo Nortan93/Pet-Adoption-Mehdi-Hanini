@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="/css/Q4.css">
+
+</head>
+
+<header>
+    
+<table class="header-table">
+    <tr>
+        <td>
+            <a href="./views/homepage"></a>
+            <img src="https://www.pngall.com/wp-content/uploads/2016/05/Kitten-Download-PNG.png" 
+             alt="Pet adoption house logo" class="logo" id="logo.img">
+        </td>
+        <td>
+            <h1 id="Adoption-House">Pet Adoption House</h1>
+        </td>
+    </tr>
+</table>
+
+<span id="dateTime"></span>
+
+</header>
+
+<script>
+    document.getElementById('logo.img').addEventListener('click', function() {
+        window.location.href = './';
+    });
+</script>
+
+<script>
+    function updateTime() {
+        const now = new Date();
+        document.getElementById('dateTime').textContent = now.toLocaleString();
+    }
+    setInterval(updateTime, 1000);
+    updateTime();
+</script>
+
+</html>

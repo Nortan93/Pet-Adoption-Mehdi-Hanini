@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Pets</title>
+    <link rel="stylesheet" href="./public/css/Q4.css">
+</head>
+
+<body>
+
+    <%- include ('partials/header') -%> 
+
+    <div class="container">
+    <%- include ('partials/sidemenu') -%>
+
+    <main id="content">
+            <section id="browse-pets" class="content-section">
+                <h2>Available Pets for Adoption</h2>
+            <div class="pet">
+                <img src="https://www.mygoldenretrieverpuppies.com/wp-content/uploads/2022/06/Golden-Retriever-Puppies-1536x1024.jpeg" 
+                alt="Fido" class="pet-image">
+                <div class="pet-info">
+                    <h3>Aidi</h3>
+                    <p>Breed: Golden Retriever</p>
+                    <p>Age: 1.5 years</p>
+                    <p>Gender: Male</p>
+                    <p>Gets Along with Other Dogs: Yes</p>
+                    <p>Gets Along with Cats: Yes</p>
+                    <p>Suitable for Small Children: Yes</p>
+                    <button class="interested-btn">Interested</button>
+                </div>
+            </div>
+
+            <div class="pet">
+                <img src="https://www.catster.com/wp-content/uploads/2023/11/White-Persian-Cat-sitting-on-a-blue-background_Oleksandr-Volchanskyi_Shutterstock.jpg.webp" 
+                alt="Whiskers" class="pet-image">
+                <div class="pet-info">
+                    <h3>Linux</h3>
+                    <p>Breed: Siamese</p>
+                    <p>Age: 2 years</p>
+                    <p>Gender: Female</p>
+                    <p>Gets Along with Other Dogs: No</p>
+                    <p>Gets Along with Cats: Yes</p>
+                    <p>Suitable for Small Children: No</p>
+                    <button class="interested-btn">Interested</button>
+                </div>
+            </div>
+            </section>
+
+        </div>
+
+        </main>
+
+        <%- include ('partials/footer') -%> 
+
+ </body>     
+</html>
+
+    
