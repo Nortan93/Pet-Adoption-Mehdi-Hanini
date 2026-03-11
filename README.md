@@ -18,11 +18,6 @@ This project is an interactive and responsive web application designed to connec
 * Data Storage: Text Files
 * Validation: Regular Expressions
 
-## Live Demo
-
-Experience a beta version of the application deployed on Render:
-* [Pet Adoption Website](https://pet-adoption-mehdi-hanini.onrender.com/)
-
 # Setup and Installation
 
 To get a local copy up and running:
